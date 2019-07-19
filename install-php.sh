@@ -7,7 +7,7 @@ apk add $EXT_DEV_REQUIREMENTS
 
 docker-php-ext-configure gd --with-jpeg-dir=usr/ --with-freetype-dir=usr/ --with-png-dir=usr/ --with-webp-dir=usr/
 
-docker-php-ext-install bcmath bz2 gd intl pdo_mysql pdo_pgsql zip
+docker-php-ext-install bcmath bz2 exif gd intl pdo_mysql pdo_pgsql zip
 
 pecl install xdebug
 docker-php-ext-enable xdebug
